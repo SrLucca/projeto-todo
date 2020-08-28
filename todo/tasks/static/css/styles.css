@@ -63,6 +63,15 @@
     padding: 0; /*tira configurações do navegador e bootstrap*/
 }
 
+.list-div2 .done_doing{
+    color: green;
+    font-size: 1.4rem;
+    border: 2px solid grey;
+    border-radius: 1.6rem;
+    width: fit-content;
+    font-weight: bolder;
+}
+
 .task-list{
     padding-left: 0;
 }

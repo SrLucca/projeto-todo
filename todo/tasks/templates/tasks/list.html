@@ -13,26 +13,13 @@
         <i class="fas fa-search"></i>
     </div>
     <ul class="task-list">
+        {% for task in tasks %} <!--para aparecer as tarefas do banco de dados no site-->
         <li class="task-item">
-            <span>Titulo da tarefa</span>
+            <span><a href="/task/{{task.id}}">{{task.title}}</a></span> <!--task.tudo que estiver na classe-->
             <span><i class="fas fa-trash"></i></span>
             <span><i class="fas fa-edit"></i></span>
         </li>
-        <li class="task-item">
-            <span>Titulo da tarefa</span>
-            <span><i class="fas fa-trash"></i></span>
-            <span><i class="fas fa-edit"></i></span>
-        </li>
-        <li class="task-item">
-            <span>Titulo da tarefa</span>
-            <span><i class="fas fa-trash"></i></span>
-            <span><i class="fas fa-edit"></i></span>
-        </li>
-        <li class="task-item">
-            <span>Titulo da tarefa</span>
-            <span><i class="fas fa-trash"></i></span>
-            <span><i class="fas fa-edit"></i></span>
-        </li>
+        {% endfor %}
     </ul>
 
 </div>
