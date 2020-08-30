@@ -19,7 +19,7 @@
         <li class="task-item">
             <span><a href="/task/{{task.id}}">{{task.title}}</a></span> <!--task.tudo que estiver na classe-->
             <span><i class="fas fa-trash"></i></span>
-            <span><i class="fas fa-edit"></i></span>
+            <a href="edit/{{task.id}}"><span><i class="fas fa-edit"></i></span></a> <!--botado de editar tarefa-->
         </li>
         {% endfor %}
     </ul>
